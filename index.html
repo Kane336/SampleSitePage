@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Sample Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onmousedown="show_coords(event)">
+    <div class="bgimg">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand text-warning font-weight-bold">PICSFolder</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" onclick="moveService"
+                                class="nav-link text-white mx-4 font-weight-bold ">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a href="#" class="nav-link text-white mx-4 font-weight-bold">SERVICES</a> -->
+                            <button class="btn btn-dark nav-link text-white mx-4 font-weight-bold bg-dark "
+                                onclick="moveService()">SERVICES</button>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a href="#" class="nav-link text-white mx-4 font-weight-bold">ABOUT US</a> -->
+                            <button class="btn btn-dark nav-link text-white mx-4 font-weight-bold bg-dark "
+                                onclick="movePortfolio()">PORTFOLIO</button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white mx-4 font-weight-bold">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a href="#" class="nav-link text-white mx-4 font-weight-bold">TEAMS</a> -->
+                            <button class="btn btn-dark nav-link text-white mx-4 font-weight-bold bg-dark "
+                                onclick="moveAboutus()">ABOUT US</button>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a href="#" class="nav-link text-white mx-4 font-weight-bold">TEAMS</a> -->
+                            <button class="btn btn-dark nav-link text-white mx-4 font-weight-bold bg-dark "
+                                onclick="moveTeams()">TEAMS</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container text-center hearderset text-white">
+            <h1>Welcome To PICSFolder</h1>
+            <h3>Here You Can Download Free Images</h3>
+            <h4>You Can Be A Member Of PICSFolder By Signin To Site</h4>
+            <button class="btn btn-warning text-white btn-lg">Signin</button>
+        </div>
+    </div>
+
+    <!-- Hare Code start for the Services -->
+
+    <div class="container ourservice text-center">
+        <h1>SERVICES</h1>
+        <h5>Website Provides Free Image and You Can Be Member By Signin To Our Website</h4>
+            <div class="row rowsetting">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto othersetting bg-light">
+                    <div class="imgsetting d-block m-auto">
+                        <i class="fa fa-search fa-5x bg-warning" aria-hidden="true"></i>
+                    </div>
+                    <h2>SEARCH PICS</h2>
+                    <p>You can Search The Pics you Want in our website. According to your choise and category</p>
+                    <button class="btn btn-warning" type="button">Search</button>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto othersetting bg-light">
+                    <div class="imgsetting d-block m-auto">
+                        <i class="fa fa-shopping-cart fa-5x bg-warning" aria-hidden="true"></i>
+                    </div>
+                    <h2>DOWNLOAD PICS</h2>
+                    <p>You can Search The Pics you Want in our website. According to your choise and category</p>
+                    <button class="btn btn-warning" type="button">View</button>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 col-10 d-block m-auto othersetting bg-light">
+                    <div class="imgsetting d-block m-auto">
+                        <i class="fa fa-user-circle fa-5x bg-warning" aria-hidden="true"></i>
+                    </div>
+                    <h2>LOGIN</h2>
+                    <p>You can Search The Pics you Want in our website. According to your choise and category</p>
+                    <button class="btn btn-warning" type="button">Login</button>
+
+                </div>
+            </div>
+    </div>
+    <!-- here code start for Portfolio -->
+
+    <section class="portfolio bg-light">
+        <div class="container text-center">
+            <h1>PORTFOLIO</h1>
+            <p>Given Below Site Provides Categories For Pictures </p>
+            <div class="row secc">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="../Photoes/nature.jpg" alt="nature" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">Nature</h2>
+                            <p class="card-text">Pics Of Nature </p>
+                            <button type="button" class="btn btn-warning">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="../Photoes/nature.jpg" alt="nature" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">Nature</h2>
+                            <p class="card-text">Pics Of Nature </p>
+                            <button type="button" class="btn btn-warning">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="../Photoes/nature.jpg" alt="nature" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">Nature</h2>
+                            <p class="card-text">Pics Of Nature </p>
+                            <button type="button" class="btn btn-warning">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row secc">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="../Photoes/nature.jpg" alt="nature" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">Nature</h2>
+                            <p class="card-text">Pics Of Nature </p>
+                            <button type="button" class="btn btn-warning">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="../Photoes/nature.jpg" alt="nature" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">Nature</h2>
+                            <p class="card-text">Pics Of Nature </p>
+                            <button type="button" class="btn btn-warning">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                    <div class="card">
+                        <img src="../Photoes/nature.jpg" alt="nature" class="card-img img-fluid">
+                        <div class="card-body">
+                            <h2 class="card-title">Nature</h2>
+                            <p class="card-text">Pics Of Nature </p>
+                            <button type="button" class="btn btn-warning">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Here start for about us -->
+    <section class="aboutus">
+        <div class="container text-center">
+            <h1>ABOUT US</h1>
+            <h3>This Is About Our Website</h3>
+            <div class="aboutusdata">
+                <p>Website Provides Free Image and You Can Be Member By Signin To Our Website</p>
+                <br>
+                <ul>
+                    <li>You can Search The Pics you Want in our website. According to your choise and category</li>
+                    <li>You can Download The Pics you Want in our website. According to your choise and category</li>
+                    <li>You can be the member of The Pics. Enjoy the services of our website</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- here is about our teams -->
+
+    <section class="ourteam">
+        <div class="container text-center">
+            <h1> OUR CREATING TEAMS </h1>
+            <h3>Team Members That Create </h3>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto">
+                    <figure class="figure">
+                        <img src="Photoes/worker1.jpeg" class="figure-img img-fluid rounded-circle" height="300px"
+                            width="210px">
+
+                        <figcaption>
+                            <h4> KANE SHA </h4>
+                            <p>Senior Web Designer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto">
+                    <figure class="figure">
+                        <img src="Photoes/worker2.jpeg" class="figure-img img-fluid rounded-circle" height="210px"
+                            width="180px">
+
+                        <figcaption>
+                            <h4> KANE SHA </h4>
+                            <p>Backend Developer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-10 col-10 d-block m-auto">
+                    <figure class="figure">
+                        <img src="Photoes/worker3.jpeg" class="figure-img img-fluid rounded-circle" height="250px"
+                            width="210px">
+
+                        <figcaption>
+                            <h4> KANE SHA </h4>
+                            <p>Frountend Developer</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer page-footer">
+        <h6 class="text-center"> CopyRight @ 2021 Designed By Kane</h6>
+    </footer>
+    <script>
+        function moveService() {
+            window.scrollTo(0, 720);
+        }
+
+        function movePortfolio() {
+            window.scrollTo(0, 1289);
+        }
+        function moveTeams() {
+            window.scrollTo(0, 2435);
+        }
+        function moveAboutus() {
+            window.scrollTo(0, 2435);
+        }
+        //  function show_coords(event) {
+        //      var x = event.clientX;
+        //      var y = event.clientY;
+        //      alert("X coords: " + x + ", Y coords: " + y);
+        //  }
+    </script>
+</body>
+
+</html>

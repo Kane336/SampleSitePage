@@ -1,0 +1,146 @@
+.bgimg{
+    background-image: url(Photoes/asoggetti-uR6dIgDnt38-unsplash.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 625px;
+}
+
+.hearderset{
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.hearderset h1{
+    color: whitesmoke;
+    font-size: 42px;
+    margin: 33px 0px;
+    font-weight: bold;
+}
+
+.hearderset h3{
+    font-size: 42px;
+    margin-top: 73px;
+    font-weight: bold;
+}
+
+.hearderset h4{
+    margin-top: 58px;
+    font-size: 37px;
+}
+.hearderset button{
+    margin-top: 38px;
+}
+
+/* here code for services */
+
+.ourservice{
+    padding: 100px 0px 60px;
+    height: 700px;
+}
+.ourservice h1{
+    font-size: 3.5rem;
+    margin-top: 34px;
+}
+.ourservice h5{
+    margin: 29px;
+}
+.rowsetting{
+    margin: 47px;
+}
+
+.imgsetting i{
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
+    padding-top: 13px;
+}
+
+.othersetting h2{
+ margin: 21px;
+}
+
+/* here code for portfolio */
+
+.portfolio{
+    height: 1100px;
+    width: 100%;
+    /* padding: 100px 0px 50px; */
+}
+
+.portfolio h1{
+    font-size: 50px;
+    margin-top: 23px;
+}
+.portfolio p{
+    font-size: 25px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+.portfolio .secc{
+    margin-bottom: 45px;
+}
+
+
+/* here we code for about us */
+
+.aboutus{
+    margin: 113px;    
+}
+
+.aboutus h1{
+    font-size: 54px;
+    padding-bottom: 25px;
+}
+
+.aboutus h3{
+    font-size: 33px;
+    padding: 8px;
+    
+}
+
+.aboutus ul{
+    list-style-position: inside;
+}
+
+.aboutusdata{
+    margin: 13px;
+    padding: 13px;
+}
+
+
+
+.aboutusdata p{
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.aboutusdata ul{
+    margin-top: 13px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+
+/* here we code for ourteam */
+
+.ourteam{
+    height: 100px;
+    width: 100%;
+    /* padding: 100px 0px 50px; */
+    margin-top:28px;
+}
+
+.ourteam h1{
+    font-size: 50px;
+    padding-bottom: 23px;
+}
+
+.ourteam h3{
+    padding-bottom: 31px;
+}
+
+.footer{
+    margin-top: 434px;
+}
